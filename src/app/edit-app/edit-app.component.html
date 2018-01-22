@@ -1,0 +1,53 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Additional Applicatioin</h4>
+          </div>
+          <div class="content">
+            <form (submit)="onSubmit(formSignIn);" #formSignIn="ngForm">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input [(ngModel)]="name" name="name" type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label>Icon</label>
+                  <img class="border-gray" src="assets/img/angular-red.png" alt="..." />
+                  <input class="btn re-img" type="file" size="4" name="" id="">
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Version</label>
+                    <input [(ngModel)]="version" name="version" class="form-control" placeholder="" value="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Operating</label>
+                    <input [(ngModel)]="operating" name="operating" class="form-control" placeholder="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Expired date</label>
+                    <input [(ngModel)]="expired_date" name="" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-info btn-fill pull-right">Update Profile</button>
+              <button type="reset" class="btn btn-danger btn-fill ">Cancel</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

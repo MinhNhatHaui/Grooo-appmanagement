@@ -1,37 +1,40 @@
 <div class="main-content">
     <div class="container-fluid">
-        <div class="row">
-            <div id="wapper">
-                <input type="submit" value="Them" class="btn btn-primary" style="float: right">
-                <div class="col-xs-12  app-l">
-                    <a name="" routerLink="" class="col-md-3">
-                        <img src="../../assets/img/angular-red.png" alt="" width="100%" height="150px">
-                    </a>
-                    <div>
-                        <div class="col-md-7 col-xs-12 ">
-                            <h4 class="name-app">
-                                <b>Name: ssssss</b> 
-                            </h4>
-                            <p>
-                                <b>Version: ssssssss</b> 
-                            </p>
-                            <p>
-                                <b>Update at: sssssssssssss</b> 
-                            </p>
-                            <p>
-                                <b>Expired at: sssssssssssss</b> 
-                            </p>
-                            <p>
-                                <b>HDH: ssssssssssss</b> 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="submit" value="Sua">
-                        <input type="submit" value="Xoa">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Icon</th>
+                    <th scope="col">Detail</th>
+                    <th scope="col">Created Date</th>
+                    <th scope="col">Updated Date</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>app1</td>
+                    <td>
+                        <img src="../../assets/img/angular-red.png" alt="" width="60" height="60">
+                    </td>
+                    <td>
+                        <a [routerLink]='["app-detail"]' class="btn btn-primary">Read more...</a>
+                    </td>
+                    <td>03/1/2017</td>
+                    <td>09/3/2018</td>
+                    <td class="td-actions ">
+                        <a rel="tooltip" title="Edit Profile" [routerLink]='["edit-app"]' style="margin-right:20px;" class="btn btn-success btn-simple btn-xs">
+                            <i class="fa fa-2x fa-edit"></i>
+                        </a>
+                        <a rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                            <i class="fa fa-2x fa-times"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+

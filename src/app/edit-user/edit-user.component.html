@@ -1,34 +1,29 @@
 <div class="main-content">
   <div class="container-fluid">
-    <input type="submit" value="Them" class="btn btn-primary" style="float: right">
     <table class="table">
       <thead class="thead-light">
         <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Username</th>
-          <th scope="col">Fullname</th>
-          <th scope="col">Avatar</th>
-          <th scope="col">Email</th>
-          <th scope="col">Phone</th>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Icon</th>
+          <th scope="col">Detail</th>
           <th scope="col">Created Date</th>
           <th scope="col">Updated Date</th>
-          <th scope="col">Status</th>
           <th scope="col">Handle</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>username1</td>
-          <td>fullname1</td>
+          <td>app1</td>
           <td>
-            <img src="../../../assets/img/sidebar-5.jpg" alt="" width="60" height="60">
+            <img src="../../assets/img/angular-red.png" alt="" width="60" height="60">
           </td>
-          <td>email1@gmail.com</td>
-          <td>01258752935</td>
+          <td>
+            <a [routerLink]='["app-detail"]' class="btn btn-primary">Read more...</a>
+          </td>
           <td>03/1/2017</td>
           <td>09/3/2018</td>
-          <td>Uploaded</td>
           <td class="td-actions ">
             <a rel="tooltip" title="Edit Profile" [routerLink]='["edit-app"]' style="margin-right:20px;" class="btn btn-success btn-simple btn-xs">
               <i class="fa fa-2x fa-edit"></i>

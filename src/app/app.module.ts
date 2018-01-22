@@ -16,12 +16,20 @@ import { UserComponent } from './user/user.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { UserService } from './core/user-test.service';
+import { EditAppComponent } from './edit-app/edit-app.component';
+import { AppDetailComponent } from './app-detail/app-detail.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { AddAppComponent } from './edit-app/add-app/add-app.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    EditAppComponent,
+    AppDetailComponent,
+    EditUserComponent,
+    AddAppComponent,
 
   ],
   imports: [

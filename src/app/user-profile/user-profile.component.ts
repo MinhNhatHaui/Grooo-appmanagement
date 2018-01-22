@@ -20,4 +20,9 @@ export class UserProfileComponent implements OnInit {
 
   }
 
+  onSubmit(formSignIn) {
+     console.log(formSignIn.value);
+  }
+
+
 }
